@@ -2,7 +2,7 @@ const { PermissionsBitField } = require('discord.js');
 
 module.exports = {
   checkPermission: async (user, message) => {
-    if (user.bot) return false;
+    
 
     const member = await message.guild.members.fetch(user.id);
     // Get guildPermission map in index.js, or set default to 'Administrator'
